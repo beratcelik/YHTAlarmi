@@ -1,0 +1,193 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #444;
+}
+
+/* Styling for the main heading */
+h1 {
+    text-align: center;
+    color: #2c3e52;
+}
+
+/* Form styling */
+form {
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Division styling */
+form div {
+    margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and select field styling */
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styling */
+button {
+    background-color: #3498dd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Utility classes for hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Style container for hour choices */
+#hourChoices {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define two columns of equal width */
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #dde;
+    border-radius: 5px;
+}
+
+/* Style each checkbox wrapper for better spacing and alignment */
+#hourChoices div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+/* Style checkboxes */
+#hourChoices input[type="checkbox"] {
+    margin: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+    accent-color: #3498dd;
+}
+
+/* Style labels for better readability and interaction */
+#hourChoices label {
+    cursor: pointer;
+    user-select: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* Hover effects for labels and checkboxes */
+#hourChoices div:hover {
+    background-color: #efefef;
+}
+
+/* Loading Spinner Style */
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    justify-self: center;
+    align-self: center;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.button-container {
+    display: flex;
+    gap: 10px; /* Optional: Adds space between the buttons */
+}
+
+.button-container button {
+    flex: 1; /* Optional: Makes buttons the same width */
+}
+
+#stop-alarm-button {
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text for better contrast */
+    border: none; /* Removes the default border */
+    padding: 10px 15px; /* Adds some padding for better size */
+    font-size: 1em; /* Adjusts the font size */
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+#stop-alarm-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+
+
+
+/* Tablo stilizasyonu */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Hover efekti */
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}

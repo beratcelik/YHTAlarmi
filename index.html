@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eda'mın Tren Bileti Bulma Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Eda'mın Tren Bileti Bulma Uygulaması</h1>
+<form id="configForm">
+    <div>
+        <label for="binisIstasyonAdi">Kalkış İstasyonu:</label>
+        <select id="binisIstasyonAdi"></select>
+    </div>
+    <div>
+        <label for="inisIstasyonAdi">Varış İstasyonu:</label>
+        <select id="inisIstasyonAdi"></select>
+    </div>
+    <div>
+        <label for="date">Tarih:</label>
+        <input type="date" id="date" value="2024-05-15">
+    </div>
+    <div id="hourContainer" style="display: block;">
+        <label for="hour">Uygun Saatleri Seçin:</label>
+        <div id="hourChoices"></div>
+    </div>
+    <div style="display: none;">
+        <label for="sleepTime">Kontrol Aralığı (saniye):</label>
+        <input type="number" id="sleepTime" value="10">
+    </div>
+    <div class="button-container">
+        <button type="button" id="stop-alarm-button" onclick="stopAlarm()" disabled>Alarmı Durdur</button>
+        <button type="button" id="find-seat-button" onclick="runFinder()">Koltuk Bul</button>
+    </div>
+    <div id="log"></div>
+    <div id="result"></div>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
